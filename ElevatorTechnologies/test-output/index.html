@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\srikanth\eclipse-workspace\ElevatorTechnologies\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">33 methods, 1 failed,   32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyrtlinuxpage">verifyrtlinuxpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyAndroidpage">verifyAndroidpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyBackendTrainingCourse">verifyBackendTrainingCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyBigDataPage">verifyBigDataPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyBlackBerrypage">verifyBlackBerrypage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyContactformReset">verifyContactformReset</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyContactformSubmit">verifyContactformSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyEmbeddedlinuxpage">verifyEmbeddedlinuxpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyFacebookicon">verifyFacebookicon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyIphonepage">verifyIphonepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyRandDoption">verifyRandDoption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifySummerTrainingPage">verifySummerTrainingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifySystemVerilogPage">verifySystemVerilogPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyVHDLpage">verifyVHDLpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyVerilogPage">verifyVerilogPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyWindowsmobilepage">verifyWindowsmobilepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyarmcontrolpage">verifyarmcontrolpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyavmcontrolpage">verifyavmcontrolpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyclangpage">verifyclangpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyclick">verifyclick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifycloudcomputingpage">verifycloudcomputingpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifycplusgpage">verifycplusgpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifydatastructurepage">verifydatastructurepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifydevicedriversarmepage">verifydevicedriversarmepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifydevicedriverspcpage">verifydevicedriverspcpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifylinuxinternalpage">verifylinuxinternalpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifymicrocontrolpage">verifymicrocontrolpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyobjectivepage">verifyobjectivepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifypicControlpage">verifypicControlpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyrtxpage">verifyrtxpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyvxWorkpage">verifyvxWorkpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.elevatortech.testcases.Elevatortech_testcases" class="method navigator-link" hash-for-method="verifyworkshopPage">verifyworkshopPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.elevatortech.testcases.Elevatortech_testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyrtlinuxpage">
+                  </a> <!-- verifyrtlinuxpage -->
+                  <span class="method-name">verifyrtlinuxpage</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable: http://elevatortechnologies.in/rt-linux.php has no size and location
+  (Session info: chrome=109.0.5414.74)
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29faafa82bba112c53ef74fc5e4c28a6, actions {actions=[org.openqa.selenium.interactions.Sequence@611e5819]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\srikanth\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58689/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 29faafa82bba112c53ef74fc5e4c28a6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at com.actiondriver.ActionDriver.mouseHoverAndClickonElement(ActionDriver.java:224)
+	at com.elevatortech.pages.Operating_Systempage.RTlinux(Operating_Systempage.java:108)
+	at com.elevatortech.testcases.Elevatortech_testcases.verifyrtlinuxpage(Elevatortech_testcases.java:324)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.elevatortech.testcases.Elevatortech_testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAndroidpage">
+                  </a> <!-- verifyAndroidpage -->
+                  <span class="method-name">verifyAndroidpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBackendTrainingCourse">
+                  </a> <!-- verifyBackendTrainingCourse -->
+                  <span class="method-name">verifyBackendTrainingCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBigDataPage">
+                  </a> <!-- verifyBigDataPage -->
+                  <span class="method-name">verifyBigDataPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBlackBerrypage">
+                  </a> <!-- verifyBlackBerrypage -->
+                  <span class="method-name">verifyBlackBerrypage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactformReset">
+                  </a> <!-- verifyContactformReset -->
+                  <span class="method-name">verifyContactformReset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactformSubmit">
+                  </a> <!-- verifyContactformSubmit -->
+                  <span class="method-name">verifyContactformSubmit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEmbeddedlinuxpage">
+                  </a> <!-- verifyEmbeddedlinuxpage -->
+                  <span class="method-name">verifyEmbeddedlinuxpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFacebookicon">
+                  </a> <!-- verifyFacebookicon -->
+                  <span class="method-name">verifyFacebookicon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIphonepage">
+                  </a> <!-- verifyIphonepage -->
+                  <span class="method-name">verifyIphonepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRandDoption">
+                  </a> <!-- verifyRandDoption -->
+                  <span class="method-name">verifyRandDoption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySummerTrainingPage">
+                  </a> <!-- verifySummerTrainingPage -->
+                  <span class="method-name">verifySummerTrainingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySystemVerilogPage">
+                  </a> <!-- verifySystemVerilogPage -->
+                  <span class="method-name">verifySystemVerilogPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVHDLpage">
+                  </a> <!-- verifyVHDLpage -->
+                  <span class="method-name">verifyVHDLpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVerilogPage">
+                  </a> <!-- verifyVerilogPage -->
+                  <span class="method-name">verifyVerilogPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWindowsmobilepage">
+                  </a> <!-- verifyWindowsmobilepage -->
+                  <span class="method-name">verifyWindowsmobilepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyarmcontrolpage">
+                  </a> <!-- verifyarmcontrolpage -->
+                  <span class="method-name">verifyarmcontrolpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyavmcontrolpage">
+                  </a> <!-- verifyavmcontrolpage -->
+                  <span class="method-name">verifyavmcontrolpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyclangpage">
+                  </a> <!-- verifyclangpage -->
+                  <span class="method-name">verifyclangpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyclick">
+                  </a> <!-- verifyclick -->
+                  <span class="method-name">verifyclick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifycloudcomputingpage">
+                  </a> <!-- verifycloudcomputingpage -->
+                  <span class="method-name">verifycloudcomputingpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifycplusgpage">
+                  </a> <!-- verifycplusgpage -->
+                  <span class="method-name">verifycplusgpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifydatastructurepage">
+                  </a> <!-- verifydatastructurepage -->
+                  <span class="method-name">verifydatastructurepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifydevicedriversarmepage">
+                  </a> <!-- verifydevicedriversarmepage -->
+                  <span class="method-name">verifydevicedriversarmepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifydevicedriverspcpage">
+                  </a> <!-- verifydevicedriverspcpage -->
+                  <span class="method-name">verifydevicedriverspcpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifylinuxinternalpage">
+                  </a> <!-- verifylinuxinternalpage -->
+                  <span class="method-name">verifylinuxinternalpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifymicrocontrolpage">
+                  </a> <!-- verifymicrocontrolpage -->
+                  <span class="method-name">verifymicrocontrolpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyobjectivepage">
+                  </a> <!-- verifyobjectivepage -->
+                  <span class="method-name">verifyobjectivepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifypicControlpage">
+                  </a> <!-- verifypicControlpage -->
+                  <span class="method-name">verifypicControlpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyrtxpage">
+                  </a> <!-- verifyrtxpage -->
+                  <span class="method-name">verifyrtxpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyvxWorkpage">
+                  </a> <!-- verifyvxWorkpage -->
+                  <span class="method-name">verifyvxWorkpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyworkshopPage">
+                  </a> <!-- verifyworkshopPage -->
+                  <span class="method-name">verifyworkshopPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\srikanth\eclipse-workspace\ElevatorTechnologies\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.elevatortech.testcases.Elevatortech_testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(33);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyContactformSubmit')
+data.setCell(0, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(0, 3, 33627);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyBlackBerrypage')
+data.setCell(1, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(1, 3, 19973);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyContactformReset')
+data.setCell(2, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(2, 3, 19591);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySummerTrainingPage')
+data.setCell(3, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(3, 3, 15275);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyIphonepage')
+data.setCell(4, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(4, 3, 13174);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifylinuxinternalpage')
+data.setCell(5, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(5, 3, 10212);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyEmbeddedlinuxpage')
+data.setCell(6, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(6, 3, 9261);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyWindowsmobilepage')
+data.setCell(7, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(7, 3, 9187);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyrtxpage')
+data.setCell(8, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(8, 3, 9176);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyAndroidpage')
+data.setCell(9, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(9, 3, 8834);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyVHDLpage')
+data.setCell(10, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(10, 3, 8583);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifymicrocontrolpage')
+data.setCell(11, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(11, 3, 8476);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyvxWorkpage')
+data.setCell(12, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(12, 3, 8382);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifypicControlpage')
+data.setCell(13, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(13, 3, 7840);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifycplusgpage')
+data.setCell(14, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(14, 3, 7774);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyclangpage')
+data.setCell(15, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(15, 3, 7632);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifydevicedriversarmepage')
+data.setCell(16, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(16, 3, 7515);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyRandDoption')
+data.setCell(17, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(17, 3, 7061);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifydevicedriverspcpage')
+data.setCell(18, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(18, 3, 6761);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifycloudcomputingpage')
+data.setCell(19, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(19, 3, 6632);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifySystemVerilogPage')
+data.setCell(20, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(20, 3, 6378);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyworkshopPage')
+data.setCell(21, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(21, 3, 6227);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyavmcontrolpage')
+data.setCell(22, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(22, 3, 6128);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyVerilogPage')
+data.setCell(23, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(23, 3, 6116);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyarmcontrolpage')
+data.setCell(24, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(24, 3, 5830);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyobjectivepage')
+data.setCell(25, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(25, 3, 5119);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyrtlinuxpage')
+data.setCell(26, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(26, 3, 4877);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifydatastructurepage')
+data.setCell(27, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(27, 3, 4660);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyclick')
+data.setCell(28, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(28, 3, 4307);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyFacebookicon')
+data.setCell(29, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(29, 3, 4036);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyBackendTrainingCourse')
+data.setCell(30, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(30, 3, 3506);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyBigDataPage')
+data.setCell(31, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(31, 3, 2729);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'test')
+data.setCell(32, 2, 'com.elevatortech.testcases.Elevatortech_testcases')
+data.setCell(32, 3, 869);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.elevatortech.testcases.Elevatortech_testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">loadconfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">openingBrowsers</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">22783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyclick</span>
+                <span class="method-start">23668 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyContactformReset</span>
+                <span class="method-start">27983 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyContactformSubmit</span>
+                <span class="method-start">47583 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFacebookicon</span>
+                <span class="method-start">81251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyRandDoption</span>
+                <span class="method-start">85299 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBackendTrainingCourse</span>
+                <span class="method-start">92370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBigDataPage</span>
+                <span class="method-start">95881 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifycloudcomputingpage</span>
+                <span class="method-start">98636 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyclangpage</span>
+                <span class="method-start">105290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifycplusgpage</span>
+                <span class="method-start">112935 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifydatastructurepage</span>
+                <span class="method-start">120716 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyobjectivepage</span>
+                <span class="method-start">125382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifymicrocontrolpage</span>
+                <span class="method-start">130524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyarmcontrolpage</span>
+                <span class="method-start">139009 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyavmcontrolpage</span>
+                <span class="method-start">144847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifypicControlpage</span>
+                <span class="method-start">150986 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifydevicedriversarmepage</span>
+                <span class="method-start">158834 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifydevicedriverspcpage</span>
+                <span class="method-start">166353 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifylinuxinternalpage</span>
+                <span class="method-start">173127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyEmbeddedlinuxpage</span>
+                <span class="method-start">183357 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyvxWorkpage</span>
+                <span class="method-start">192627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyrtlinuxpage</span>
+                <span class="method-start">201013 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyrtxpage</span>
+                <span class="method-start">205902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIphonepage</span>
+                <span class="method-start">215085 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAndroidpage</span>
+                <span class="method-start">228267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyWindowsmobilepage</span>
+                <span class="method-start">237113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBlackBerrypage</span>
+                <span class="method-start">246318 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyVHDLpage</span>
+                <span class="method-start">266295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyVerilogPage</span>
+                <span class="method-start">274896 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySystemVerilogPage</span>
+                <span class="method-start">281020 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySummerTrainingPage</span>
+                <span class="method-start">287424 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyworkshopPage</span>
+                <span class="method-start">302753 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">308997 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
